@@ -1,0 +1,332 @@
+body {
+  background: rgb(51, 102, 153);
+  background: linear-gradient(90deg, rgb(51, 102, 153) 0%, rgba(234, 76, 137, 1)  32%, rgb(183, 183, 183)  
+   68%, rgba(51, 102, 153, 1) 100%);
+   overflow: hidden;
+}
+
+
+
+.card{
+  position: absolute;
+  border-radius: 100px;
+  top: 50%;
+  left: 50%;
+  width: 60rem;
+  height: 650px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  transform: translate(-50%, -50%) rotate(5deg);
+  border: 0.3px solid #fff;
+}
+
+
+.cardTwo{
+  position: absolute;
+  border-radius: 100px;
+  top: 50%;
+  left: 50%;
+  width: 60rem;
+  height: 650px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.473);
+  padding: 20px;
+  transform: translate(-50%, -50%) rotate(-5deg);
+  border: 0.3px solid #fff;
+}
+
+
+.cardProdOne {
+  position: absolute;
+  border-radius: 20px;
+  top: 50%;
+  left: 12%;
+  width: 18rem;
+  height: 33rem;
+  background-color: #fff;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  animation-name: float3; /* change the animation name */
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+@keyframes float3 {
+  0% {
+    transform: translate(-50%, -50%) rotate(-8deg);
+  }
+  50% {
+    transform: translate(-50%, -45%) rotate(-10deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-8deg);
+  }
+}
+
+
+
+
+
+
+
+
+.cardProdOne-0{
+  position: absolute;
+  border-radius: 20px;
+  top: 50%;
+  left: 50.5%;
+  width: 18rem;
+  height: 33rem;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%) perspective(1000px) rotateX(5deg);
+  }
+  50% {
+    transform: translate(-50%, -55%) perspective(1000px) rotateX(5deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) perspective(1000px) rotateX(5deg);
+  }
+}
+
+.cardProdTwo:hover {
+  transform: translate(-50%, -50%) perspective(1000px) rotateX(5deg) rotate(-10deg);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+
+
+
+.cardProdOne-1{
+  position: absolute;
+  border-radius: 20px;
+  top: 50%;
+  left: 89%;
+  width: 18rem;
+  height: 33rem;
+  background-color: #fff;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  animation-name: float2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+@keyframes float2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(8deg);
+  }
+  50% {
+    transform: translate(-50%, -45%) rotate(10deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(8deg);
+  }
+}
+
+
+
+
+.cardProdTree:hover {
+  transform: translate(-50%, -50%) rotate(10deg);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+
+.bgProductImageOne{
+  position: absolute;
+  border-radius: 100px 30px 30px 30px;
+  background-color: #2467aace;
+  top: 65px;
+  width: 285px;
+  height: 180px;
+}
+
+.bgProductImageOne-0{
+  position: absolute;
+  border-radius: 100px 30px 30px 30px;
+  background-color: #d35c6ede;
+  top: 65px;
+  width: 285px;
+  height: 180px;
+}
+
+.bgProductImageOne-1{
+  position: absolute;
+  border-radius: 100px 30px 30px 30px;
+  background-color: #2467aace;
+  top: 65px;
+  width: 285px;
+  height: 180px;
+}
+
+img{
+  margin-left: 30px;
+  margin-top: -50px;
+}
+
+
+.infoProd{
+  margin-top: 250px;
+}
+
+.infoProd h1{
+  font-size: 20px;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #333;
+}
+
+
+.info-desc-prod{
+  margin-top: 15px;
+}
+
+.info-desc-prod .item-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.info-desc-prod .item-info .label {
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 10px;
+  font-family:Verdana;
+  color: #333333a8;
+}
+
+.info-desc-prod .item-info .value {
+  flex-grow: 1;
+  text-align: right;
+  font-weight: bold;
+  font-size: 13px;
+  font-family:Verdana;
+  color: #333;
+}
+
+
+.info-desc-prod .item-info .valuetwo {
+  flex-grow: 1;
+  text-align: right;
+  font-weight: bold;
+  font-size: 13px;
+  font-family:Verdana;
+  color: #333;
+}
+
+#color-picker {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.selected {
+  border: 2px solid #fff;
+  box-shadow: 0 0 3px #000;
+}
+
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.original-price {
+  font-size: 16px;
+  color: #999;
+  text-decoration: line-through;
+  margin-right: 10px;
+  font-family:Verdana;
+}
+
+.promo-price {
+  font-size: 25px;
+  color: #333;
+  font-family:Verdana;
+}
+
+
+
+.btn-buy {
+  background: linear-gradient(90deg, rgb(51, 102, 153) 0%, rgb(51, 102, 153)  32%, rgb(183, 183, 183)  
+   68%, rgba(51, 102, 153, 1) 100%);
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.6rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 80px;
+  margin-top: 15px;
+}
+
+.btn-buy:hover {
+  transform: scale(1.2);
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: -100px;
+}
+
+.loading {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+ 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
