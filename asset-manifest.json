@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Microservice_Products_With_NodeJs/static/css/main.23ef7b65.css",
+    "main.js": "/Microservice_Products_With_NodeJs/static/js/main.63ce6c14.js",
+    "static/js/787.d0acb16e.chunk.js": "/Microservice_Products_With_NodeJs/static/js/787.d0acb16e.chunk.js",
+    "index.html": "/Microservice_Products_With_NodeJs/index.html",
+    "main.23ef7b65.css.map": "/Microservice_Products_With_NodeJs/static/css/main.23ef7b65.css.map",
+    "main.63ce6c14.js.map": "/Microservice_Products_With_NodeJs/static/js/main.63ce6c14.js.map",
+    "787.d0acb16e.chunk.js.map": "/Microservice_Products_With_NodeJs/static/js/787.d0acb16e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23ef7b65.css",
+    "static/js/main.63ce6c14.js"
+  ]
+}
