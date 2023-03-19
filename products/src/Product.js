@@ -7,7 +7,7 @@ function Product() {
 
     useEffect(() => {
         setIsLoading(true);
-        axios.get(`http://localhost:5000/items?_=${Math.random()}`)
+        axios.get('/items?_='+Math.random())
             .then(res => {
                 setItems(res.data);
                 setTimeout(() => setIsLoading(false), 800); // add a delay of 500ms
@@ -28,7 +28,7 @@ function Product() {
                         items.map((item, index) => (
                             <div className={`cardProdOne cardProdOne-${index}`} key={item._id}>
                                 <div className={`bgProductImageOne bgProductImageOne-${index}`}>
-                                    <img src={`http://localhost:5000/${item.imageProduct}`} alt="chaise" style={{ width: '80%', height: 'auto' }} />
+                                    <img src={`/${item.imageProduct}`} alt="chaise" style={{ width: '80%', height: 'auto' }} />
                                 </div>
                                 <div className="infoProd">
                                     <h1>{item.titleProduct}</h1>
