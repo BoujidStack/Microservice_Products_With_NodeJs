@@ -1,10 +1,13 @@
-import Product from "./Product";
+import { Route, Routes} from 'react-router-dom';
+import Product from './Product';
+import Profile from './Profile';
 
 function App() {
   return (
-    <div className="App">
-      <Product/>
-    </div>
+    <Routes>
+      <Route path="/profile" element={<Profile/>} />
+      <Route exact path="/" element={<Product/>} />
+    </Routes>
   );
 }
 

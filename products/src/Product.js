@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 
 function Product() {
     const [items, setItems] = useState([]);
@@ -7,7 +9,7 @@ function Product() {
 
     useEffect(() => {
         setIsLoading(true);
-        axios.get('/items?_='+Math.random())
+        axios.get('/items?_=' + Math.random())
             .then(res => {
                 setItems(res.data);
                 setTimeout(() => setIsLoading(false), 800); // add a delay of 500ms
@@ -68,6 +70,14 @@ function Product() {
                     )}
                 </div>
             </div>
+            <footer>
+                <div class="container">
+                    <p class="copyright">
+                        &copy; 2023 <Link to="/profile" className="brand">Boujidstack</Link>. All Rights Reserved.
+                    </p>
+                </div>
+            </footer>
+            
         </div>
 
     );
